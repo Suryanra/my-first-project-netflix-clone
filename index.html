@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        *{
+        padding:0;
+        margin:0;
+        box-sizing: border-box;
+        }
+        .header{
+            width:100%;
+            height:10vh;
+            background-color: black;
+            position:fixed;
+            display:flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            z-index:200;
+        }
+        .header .header_box1{
+            padding-left:10px;
+            width:100px;
+            display:inline-block;
+            /* border:2px solid red; */
+            position:fixed;
+            top:15px;
+            left:5px;
+            
+        
+        }
+        .header .header_box2{
+            border:1px solid white;
+        box-sizing: border-box;
+        min-width:75px;
+        color:white;
+        font:15px netlix-sans;
+        text-align:center;
+        height:58%;
+        float:right;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        margin-right:30px;
+        cursor:pointer;
+        }
+        .header .header_box2:hover{
+
+background-color: rgba(138, 138, 139, 0.402);
+        }
+        .header .header_box3{
+        box-sizing: border-box;
+        min-width:110px;
+        color:white;
+        font:15px netlix-sans;
+        text-align:center;
+        height:58%;
+        float:right;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background-color: red;
+        margin-right:10px;
+        cursor:pointer;
+        }
+        .header .header_box4{
+            box-sizing: border-box;
+        color:white;
+        font:15px netlix-sans;
+        text-align:center;
+        height:58%;
+        float:right;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        margin-right:15px;
+        cursor:pointer;
+        }
+        .header .header_box1 img{
+            margin-top:-10px;
+            width:100px;
+            height:9vh;
+        }
+        @media (max-width:600px)
+        {
+            .header .header_box4 {
+                visibility:hidden;
+            }
+           
+        }
+        @media (max-width:600px)
+        
+        {
+            .header .header_box1 img{
+                margin-top:-5px;
+                width:40px;
+                height:40px;
+                margin-left:-8px;
+                margin-bottom:14px;
+            }
+        } 
+.container1{
+    padding:10px;
+
+    /* border:2px solid red; */
+    width:100%;
+    height:40vh;
+   font-size:larger;
+    background-color: rgb(16, 15, 15);
+    color:white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* display:flex; */
+    display:block;
+    
+
+}
+.container1 h1{
+
+    margin-top:30px;
+    margin-left:10px;
+   
+    padding:5px;
+    font-size:60px;
+   
+    /* font-weight:700; */
+}
+.container1 p{
+    text-align:left;
+    margin-left:20px;
+    margin-right:20px;
+    width:60vw;
+    margin-top:15px;
+    padding-bottom:15px;
+    /* font-weight:100; */
+}
+@media (max-width:600px)
+{
+    .container1 h1{
+        font-size: 30px;;
+    }
+    .container1 p{
+        width:80vw;
+        /* height:60vh; */
+        font-size:10px;
+    }
+    
+}
+
+
+.container2{
+    width:100%;
+    background-color: rgb(31, 29, 29);
+    height:300px;
+    padding:20px;
+    color:white;
+    font-size:larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+display:flex;
+position:relative;
+/* flex-direction:row; */
+/* align-items: center; */
+/* overflow-x: auto; */
+padding-right:10px;
+flex-direction: column;
+
+}
+.container2 .container2_1{
+    margin-top:19px;
+    display:flex;
+    flex-direction: row;
+    overflow-x: auto;
+    margin-left:20px;
+    margin-right:20px;
+    
+   
+}
+.container2 .container2_1:nth-child(2)
+{
+    position: relative;
+}
+.container2 .container2_1::-webkit-scrollbar{
+    width:0;
+}
+.container2 .container2_1 .container2_box1{
+   
+    margin-bottom:5px;
+    height:50vh;
+    width:380px;
+    height:170px;
+  margin-right:10px;
+    /* background-color: red; */
+    display:flex;
+    flex-direction: column;
+    cursor:pointer;
+   
+}
+
+.container2::-webkit-scrollbar{
+    width:0;
+}
+.container2 h2{
+    position:absolute;
+    top:10px;
+
+}
+.container2 .container2_box1{
+
+min-width:280px;
+height:190px;
+/* background-color: red; */
+margin:2px;
+text-align:center;
+font-size: 1rem;
+letter-spacing:normal;
+word-spacing: normal;
+border:1px solid black;
+
+}
+
+.container2 .container2_1 .container2_box1 img{
+    width:100%;
+    height:85%;
+}
+.arrow{
+    position:absolute;
+    right:5px;
+    top:30%;
+    width:50px;
+    /* color:red; */
+}
+
+#blur {
+        /* font-size: 40px; */
+        filter: blur(5px);
+        -webkit-filter: blur(5px);
+        border: 4px solid  black;
+        outline: 4px solid rgba(0, 0, 0, 0.804);
+       
+      }
+.last{
+    position:relative;
+    /* display:flex; */
+    width:100%;
+    /* height:40vh; */
+    /* background-color: #0b0808ad; */
+    background-color: #0b0808ad;
+}
+
+.last .end1{
+   
+    position:absolute;
+    top:-100px;
+width:100%;
+height:auto;
+color:white;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+background-image:linear-gradient(to top,rgba(6, 6, 6, 0.932) 10%,rgba(0, 0, 0, 0.984));
+display:flex;
+/* align-content: center; */
+flex-direction: column;
+align-content: center;
+justify-content: center;
+padding-top: 100px;
+padding-bottom: 100px;
+display:flex;
+justify-content: center;
+}
+.last .end1 div:nth-child(1){
+    /* background-color: yellow; */
+  
+    font-size: 43px;
+    width:70vw;
+    text-align:center;
+    align-self: center;
+    padding:15px;
+    height:auto;
+}
+.last .end1 div:nth-child(2){
+    width:50vw;
+    /* background-color: yellow; */
+    height:auto;
+    font-size: 26px;
+    text-align:center;
+    align-self: center;
+    word-spacing: 5px;
+    padding:20px;
+    /* background-color: #0b0808ad; */
+}
+.last .end1 div:nth-child(3)
+{
+    align-self:center;
+    padding-top:200px;
+}
+.last .end1 div button {
+    color:white;
+    font-size: 20px;
+background-color: rgb(190, 6, 6);
+padding:14px 35px;
+align-items: center;
+}
+ a{
+    text-decoration:none;
+    color:rgb(152, 152, 152);
+    padding:40px; 
+}
+
+.last .end1 div button:hover {
+
+background-color: rgb(255, 0, 0);
+
+}
+.last .end1 div:nth-child(4){
+    padding-top:170px;
+    padding-left:20px;
+    padding-right:10px;
+
+}
+.last .end1 div:nth-child(4) a{
+    text-decoration:none;
+    color:rgb(152, 152, 152);
+    
+}
+.last .end1 :nth-child(4) a:hover{
+    text-decoration:underline;
+
+}
+
+
+.last .end1 div:nth-child(5) span{
+    min-width:300px;
+    max-width: 320px;
+    padding:5px;
+    margin-top: 5px;
+    margin-left: 10px;;
+
+
+}
+@media(max-width:600px)
+{
+    .last .end1 div:nth-child(5) span{
+    min-width:150px;
+    
+    padding:5px;
+    margin-top: 5px;
+
+
+}
+}
+.last .end1 div:nth-child(5) span a{
+    min-width:300px;
+    font-style:normal;
+    max-width: 320px;
+    padding:5px;
+    margin-top: 5px;
+   font-size:13px;
+   
+
+
+}
+.last .end1 div:nth-child(5) span a:hover{
+text-decoration: underline;
+
+
+
+}
+
+.last .end1 div:nth-child(5)
+{padding-top:70px;
+    display:flex;
+flex-direction:row;
+flex-wrap:wrap;
+}
+
+.last .end1 div:nth-child(6){
+    margin-left:20px;
+    width:140px;
+    height:60px;
+    border:2px solid black;
+    margin-top:70px;
+    position: relative;
+}
+   
+    </style>
+</head>
+<body>
+<div class="header">
+    <span class="header_box1">
+        <picture>
+            <source media="(max-width:600px)" srcset="image/netflic_icon.png" style="width:80px;">
+            <img src="image/netflix2.png" style="size:80px 80px;"></span>
+          </picture>
+
+    
+    <div class="header_box2">SIGN IN</div>
+    <div class="header_box3">JOIN NOW</div>
+    <div class="header_box4">UNLIMITED TV SHOW & MOVIES</div>
+</div>
+<div class="container1">
+    <br>
+    <br>
+    <br>
+    <h1>Movies</h1>
+    <p>Movies move us like nothing else can, whether they’re scary, funny, dramatic, romantic or anywhere in-between. So many titles, so much to experience.</p>
+
+</div>
+
+<div class="container2">
+    <div class="container2_1"><h2>Bollywood Best Movies</h2></div>
+    <div class="container2_1">
+        <div class="container2_box1"><img src="image/a1.jpg "><figcaption>Rockstar</figcaption></div>
+        <div class="container2_box1"><img src="image/a2.jpg "><figcaption>Gabbar</figcaption></div>
+        <div class="container2_box1"><img src="image/a3.jpg "><figcaption>WAR</figcaption></div>
+        <div class="container2_box1"><img src="image/a4.jpg"><figcaption>R rajkumar</figcaption></div>
+        <div class="container2_box1"><img src="image/a5.jpg"><figcaption>2 State</figcaption></div>
+        <div class="container2_box1"><img src="image/a6.jpg"><figcaption>bang bang</figcaption></div>
+        <div class="container2_box1"><img src="image/a7.jpg"><figcaption>Bahubali</figcaption></div>
+        <div class="container2_box1"><img src="image/a8.jpg"><figcaption>Bhaagi</figcaption></div>
+        <div class="container2_box1"><img src="image/a9.jpg"><figcaption>Raees</figcaption></div>
+        <div class="container2_box1"><img src="image/a10.jpg"><figcaption>Commando</figcaption></div>
+    </div>
+    <img src="image/arrow.png" class="arrow">
+</div>
+
+
+<div class="container2">
+    <div class="container2_1"><h2>Romance </h2></div>
+    <div class="container2_1">
+        <div class="container2_box1"><img src="image/r1.jpg "><figcaption>Ajeeb daastan</figcaption></div>
+        <div class="container2_box1"><img src="image/r2.jpg "><figcaption>Love Aajkal</figcaption></div>
+        <div class="container2_box1"><img src="image/r3.jpg "><figcaption>Baar Baar dekho</figcaption></div>
+        <div class="container2_box1"><img src="image/r4.jpg"><figcaption>R rajkumar</figcaption></div>
+        <div class="container2_box1"><img src="image/r5.jpg"><figcaption>Kalank</figcaption></div>
+        <div class="container2_box1"><img src="image/r6.jpg"><figcaption>Love per square feet</figcaption></div>
+       
+    </div>
+    <img src="image/arrow.png" class="arrow">
+</div>
+
+
+
+<div class="container2">
+    <div class="container2_1"><h2>Marvel </h2></div>
+    <div class="container2_1">
+        <div class="container2_box1"><img src="image/m5.jpg "><figcaption>Guardian of the galaxy vol 1</figcaption></div>
+        <div class="container2_box1"><img src="image/m6.jpg "><figcaption>Iron man</figcaption></div>
+        <div class="container2_box1"><img src="image/m4.jpg "><figcaption>Guardian of the galaxy vol 2</figcaption></div>
+        <div class="container2_box1"><img src="image/m3.jpg"><figcaption>Avenger</figcaption></div>
+        <div class="container2_box1"><img src="image/m2.jpg"><figcaption>Avenger infinity war</figcaption></div>
+        <div class="container2_box1"><img src="image/m1.jpg"><figcaption>Avenger Endgame</figcaption></div>
+       
+    </div>
+    <img src="image/arrow.png" class="arrow">
+</div>
+<div class="container2 ">
+    <div class="container2_1"><h2>Animated Movies </h2></div>
+    <div class="container2_1">
+        <div class="container2_box1"><img src="image/n5.jpg "><figcaption>Sing</figcaption></div>
+        <div class="container2_box1"><img src="image/n6.jpg "><figcaption>Monkey king</figcaption></div>
+        <div class="container2_box1"><img src="image/n4.jpg "><figcaption>Spider-man</figcaption></div>
+        <div class="container2_box1"><img src="image/n3.jpg"><figcaption>The Super Mario Bros</figcaption></div>
+        <div class="container2_box1"><img src="image/n2.jpg"><figcaption>Kung Fu Panda</figcaption></div>
+        <div class="container2_box1"><img src="image/n1.jpg"><figcaption>Kung Fu Panda</figcaption></div>
+       
+    </div>
+    <img src="image/arrow.png" class="arrow">
+</div>
+<div class="container2 ">
+    <div class="container2_1"><h2>Action Thrillers</h2></div>
+    <div class="container2_1">
+        <div class="container2_box1"><img src="image/s1.jpg "><figcaption>SAS: Rise of the Black Swan
+        </figcaption></div>
+        <div class="container2_box1"><img src="image/s6.jpg "><figcaption>65</figcaption></div>
+        <div class="container2_box1"><img src="image/s4.jpg "><figcaption>God father</figcaption></div>
+        <div class="container2_box1"><img src="image/s3.jpg"><figcaption>Inception</figcaption></div>
+        <div class="container2_box1"><img src="image/s2.jpg"><figcaption>Player</figcaption></div>
+        <div class="container2_box1"><img src="image/s5.jpg"><figcaption>Wanted</figcaption></div>
+       
+    </div>
+    <img src="image/arrow.png" class="arrow">
+</div>
+<div class="container2 ">
+    <div class="container2_1"><h2>Horror Movies</h2></div>
+    <div class="container2_1">
+        <div class="container2_box1"><img src="image/s7.jpg "><figcaption>No Escape room</figcaption></div>
+        <div class="container2_box1"><img src="image/s8.png "><figcaption>Bright burn</figcaption></div>
+        <div class="container2_box1"><img src="image/s9.jpg "><figcaption>Bhool bhulaiyaa 2</figcaption></div>
+        <div class="container2_box1"><img src="image/s10.png"><figcaption>Unfriended:Dark web</figcaption></div>
+        <div class="container2_box1"><img src="image/s11.jpg"><figcaption>
+          
+
+The Conjuring:
+        </figcaption></div>
+        <div class="container2_box1"><img src="image/s12.jpg"><figcaption>TIN And TINA</figcaption></div>
+       
+    </div>
+    <img src="image/arrow.png" class="arrow">
+</div>
+
+
+
+<!-- blur content creating  -->
+
+<div class="container2 " id="blur">
+    <div class="container2_1"><h2>Animated Movies </h2></div>
+    <div class="container2_1">
+        <div class="container2_box1 "><img src="image/n5.jpg " styel="filter:blur(20px);"><figcaption>Rockstar</figcaption></div>
+        <div class="container2_box1"><img src="image/n6.jpg "><figcaption>Gabbar</figcaption></div>
+        <div class="container2_box1"><img src="image/n4.jpg "><figcaption>WAR</figcaption></div>
+        <div class="container2_box1"><img src="image/n3.jpg"><figcaption>R rajkumar</figcaption></div>
+        <div class="container2_box1"><img src="image/n2.jpg"><figcaption>2 State</figcaption></div>
+        <div class="container2_box1"><img src="image/n1.jpg"><figcaption>bang bang</figcaption></div>
+       
+    </div>
+    <img src="image/arrow.png" class="arrow">
+</div>
+
+
+<div class="container2" id="blur" >
+    <div class="container2_1" ><h2>Animated Movies </h2></div>
+    <div class="container2_1">
+        <div class="container2_box1"><img src="image/n5.jpg "><figcaption>Rockstar</figcaption></div>
+        <div class="container2_box1"><img src="image/n6.jpg "><figcaption>Gabbar</figcaption></div>
+        <div class="container2_box1"><img src="image/n4.jpg "><figcaption>WAR</figcaption></div>
+        <div class="container2_box1"><img src="image/n3.jpg"><figcaption>R rajkumar</figcaption></div>
+        <div class="container2_box1"><img src="image/n2.jpg"><figcaption>2 State</figcaption></div>
+        <div class="container2_box1"><img src="image/n1.jpg"><figcaption>bang bang</figcaption></div>
+       
+    </div>
+    <img src="image/arrow.png" class="arrow">
+   
+</div>
+<div class="last">
+<div class="end1"> 
+    <div class="insidebox1">There’s even more to watch.</div>
+    <div class="insidebox2"> Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals and more. Watch as much as you want, anytime you want.
+   </div>
+   <div class="insidebox3" ><button>JOIN NOW</button>
+</div>
+<div class="insidebox4">
+    <a href="#">Read about Netflix TV shows and movies and watch bonus videos on Tudum.com.</a>
+    <br>
+<br>
+<br>
+<br><br>
+<br><br><br><br><br>
+
+    <a href="#">Questions? Contact us.
+
+    </a>
+</div>
+<div class="insidebox5">
+    <span><a href="#">FAQ</a></span>
+    <span><a href="#">Help center</a></span>
+    <span><a href="#">account</a></span>
+    <span><a href="#">media center</a></span>
+    <span><a href="#">investro relations</a></span>
+    <span><a href="#">jobs</a></span>
+    <span><a href="#">ways to watch</a></span>
+    <span><a href="#">term of us</a></span>
+    <span><a href="#">privacy </a></span>
+    <span><a href="#">Cookie Preferences</a></span>
+    <span><a href="#">Corporate Information</a></span>
+    <span><a href="#">Contact Us</a></span>
+    <span><a href="#">Speed Test </a></span>
+    <span><a href="#">Legal Notices</a></span>
+    <span><a href="#">Only on Netflix</a></span>
+
+</div>
+   
+
+<div class="insidebox6">
+    <img src="image/globalnew.png" style="width:25%;height:95%;margin-left: 3px;margin-top:auto;background-color: rgb(196, 190, 190);border-radius:50%;">
+
+
+<select style="width:70%;height:100% ;position: absolute;right:1px;background-color: rgb(0, 0, 0);border:none;color:rgb(75, 73, 73)">
+    <option>English</option>
+    <option>hindi</option>
+</select></div>
+</div>
+
+
+
+
+</body>
+</html>
